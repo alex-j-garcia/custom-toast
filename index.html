@@ -11,8 +11,20 @@
 
   <body>
     <script src="script.js"></script>
-    <script src="tinytest.js">
-      
+    <script src="tinytest.js"></script>
+    <script>
+       tests({
+        "it should return an object": () => {
+          let obj = customToast({
+            message: "",
+            color: "",
+            timeout: 0,
+            icon: ""
+          });
+
+          eq(typeof {}, typeof obj);
+        },
+      });
     </script>
   </body>
 </html>
