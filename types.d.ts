@@ -3,4 +3,6 @@ type ToastOptions = {
   color: string,
   timeout: number,
   icon: string,
+  closeOnClick: boolean,
+  hideProgressBar: boolean,
 }

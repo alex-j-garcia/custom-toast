@@ -14,15 +14,8 @@
     <script src="tinytest.js"></script>
     <script>
        tests({
-        "it should return an object": () => {
-          let obj = customToast({
-            message: "",
-            color: "",
-            timeout: 0,
-            icon: ""
-          });
-
-          eq(typeof {}, typeof obj);
+        "toast is an object": () => {
+          eq(typeof toast, typeof {});
         },
       });
     </script>
